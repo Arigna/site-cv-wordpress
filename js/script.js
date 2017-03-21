@@ -87,19 +87,19 @@ $(function(){ //Fonction d'attente du chargement du DOM
     });
     // Compétence #1 (Développement Web) :
     $('#competences .container>ul>li').eq(0).on('click', function(){
-        $('#competences .container>div').eq(0).slideDown();
+        $('#competences .container>div').eq(0).slideToggle();
         $('#competences .container>div').eq(1).slideUp();
         $('#competences .container>div').eq(2).slideUp();
     });
     // Compétence #2 (Informatique) :
     $('#competences .container>ul>li').eq(1).on('click', function(){
-        $('#competences .container>div').eq(1).slideDown();
+        $('#competences .container>div').eq(1).slideToggle();
         $('#competences .container>div').eq(0).slideUp();
         $('#competences .container>div').eq(2).slideUp();
     });
     // Compétence #3 (Commerce) :
     $('#competences .container>ul>li').eq(2).on('click', function(){
-        $('#competences .container>div').eq(2).slideDown();
+        $('#competences .container>div').eq(2).slideToggle();
         $('#competences .container>div').eq(1).slideUp();
         $('#competences .container>div').eq(0).slideUp();
     });

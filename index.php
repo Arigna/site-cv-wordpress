@@ -18,7 +18,7 @@
                     <li><a href="#">Loisirs</a></li>
                 </ul>
                 <a href="<?php echo get_field('fichier_cv'); ?>" id="dl-cv" title="Télécharger mon CV" download>Télécharger mon CV</a>
-                <h2><?php echo get_field('titre_section_a_propos'); ?></h2>
+                <h2>Présentation</h2>
                 
                 <!--Présentation-->
                 <div id="description">
@@ -127,34 +127,19 @@
                     'hide_empty' => '0')); ?>
                 </ul>
                 <div class="rea-containt">
-                    <div class="rea-row">
-                        <div class="rea-cell">
-                            <img src="<?php bloginfo('template_url'); ?>/img/proj_direct_energie.jpg" alt="">
-                            <p><i class="fa fa-search-plus" aria-hidden="true"></i></p>
-                        </div>
-                        <div class="rea-cell">
-                            <img src="<?php bloginfo('template_url'); ?>/img/proj_resonances.jpg" alt="">
-                            <p><i class="fa fa-search-plus" aria-hidden="true"></i></p>
-                        </div>
-                        <div class="rea-cell">
-                            <img src="<?php bloginfo('template_url'); ?>/img/proj_dab.jpg" alt="">
-                            <p><i class="fa fa-search-plus" aria-hidden="true"></i></p>
-                        </div>
-                    </div>
-                    <div class="rea-row">
-                        <div class="rea-cell">
-                            <img src="<?php bloginfo('template_url'); ?>/img/proj_ampoule.jpg" alt="">
-                            <p><i class="fa fa-search-plus" aria-hidden="true"></i></p>
-                        </div>
-                        <div class="rea-cell">
-                            <img src="<?php bloginfo('template_url'); ?>/img/proj_slide.jpg" alt="">
-                            <p><i class="fa fa-search-plus" aria-hidden="true"></i></p>
-                        </div>
-                        <div class="rea-cell">
-                            <img src="<?php bloginfo('template_url'); ?>/img/" alt="">
-                            <p><i class="fa fa-search-plus" aria-hidden="true"></i></p>
-                        </div>
-                    </div>
+                    <?php
+                        if ( have_posts() ) :
+                            while ( have_posts() ) : the_post(); ?>
+                                <div class="rea-cell">
+                                    <img src="<?php echo get_field('image'); ?>" alt="<?php echo get_field('nom_du_projet'); ?>">
+                                    <a href="<?php echo get_field('lien'); ?>" target="_blank">
+                                        <p>
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            <span><?php echo get_field('nom_du_projet'); ?></span>
+                                        </p>
+                                    </a>
+                                </div>
+                    <?php endwhile; endif; ?>
                 </div>
             </div>
         </section>

@@ -240,6 +240,10 @@ header nav li:hover {
 }
 #competences .container > ul > li {
   padding: 0 50px;
+  cursor: pointer;
+}
+#competences .container > ul > li:hover h3 {
+  background: #C1AF99;
 }
 #competences .container > ul > li:first-of-type {
   display: table-cell;
@@ -258,12 +262,8 @@ header nav li:hover {
 }
 #competences h3 {
   margin: 20px 0;
-}
-#competences ul li a {
+  line-height: 35px;
   transition-duration: 0.3s;
-}
-#competences ul li a:hover {
-  border-bottom: solid 1px #fafafa;
 }
 #competences .container div {
   background: rgba(250, 250, 250, 0.5);
@@ -290,39 +290,37 @@ header nav li:hover {
 #realisations .container > ul {
   display: inline-block;
   margin: 40px 0;
+}
+#realisations .container .categories>ul {
+  margin: 15px 0;
   overflow: hidden;
 }
-#realisations .container > ul > li {
-  display: block;
+#realisations .container .cat-item {
   float: left;
   padding: 0 20px;
   line-height: 40px;
-  text-transform: uppercase;
   font-weight: 600;
   color: #C1AF99;
   border-bottom: solid 1px #ddd;
   transition-duration: 0.3s;
+  text-transform: uppercase;
 }
-#realisations .container > ul > li:hover {
+#realisations .container .cat-item:hover {
   color: #060F2E;
   border-bottom: solid 1px #060F2E;
 }
-
 /* Le tableau */
 .rea-containt {
-  display: table;
   margin-top: 20px;
   width: 100%;
-  border-spacing: 30px;
-}
-.rea-row {
-  display: table-row;
 }
 .rea-cell {
-  display: table-cell;
-  width: 33.3333%;
+  display: inline-block;
+  width: 351px;
   border: solid 1px #ccc;
   position: relative;
+  margin: 15px;
+  box-shadow: 2px 2px 5px #ccc;
 }
 .rea-cell img {
   display: block;
@@ -349,6 +347,9 @@ header nav li:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.rea-cell p span {
+  font-weight: 600;
 }
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
