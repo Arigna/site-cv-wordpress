@@ -1,0 +1,220 @@
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+/* Reset CSS */
+body {
+	font: 16px sans-serif;
+	margin: 0;
+	background: #ccc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 100;
+	margin: 0;
+	text-align: center;
+}
+* {
+	box-sizing: border-box;
+}
+p {
+	margin: 0;
+}
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+h1 {
+	line-height: 60px;
+	background: #000;
+	color: #fff;
+	box-shadow: 0 0 10px #000;
+}
+/* Le distributeur */
+#dab {
+	width: 850px;
+	height: 700px;
+	margin: 20px auto;
+	background: url("../img/dab.jpg")no-repeat center center scroll;
+	background-size: cover;
+	position: relative;
+	border: solid 3px #000;
+	box-shadow: 0 0 10px #000;
+}
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+/* L'écran */
+#ecran {
+	width: 340px;
+	height: 238px;
+	position: absolute;
+	left: 105px;
+	top: 192px;
+	padding: 30px 30px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 600;
+	overflow: hidden;
+}
+#ecran h3 {
+	font-weight: 600;
+}
+#ecran #paragraph {
+	margin: 30px 0;
+}
+#ecran input {
+	display: inline-block;
+	border: solid 4px #000;
+	margin: 10px auto;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 2px 5px;
+}
+#ecran input[type="text"] {
+	width: 100px;
+}
+#ecran input[type="button"] {
+	border: solid 3px #000;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.warning {
+	color: #ff0000;
+}
+#ecran button {
+	display: block;
+	width: 150px;
+	margin: 10px auto;
+	cursor: pointer;
+}
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+/* Compartiment CB */
+#contain-cb {
+	position: absolute;
+	width: 74px;
+	height: 124px; /*7px*/
+	left: 590px;
+	top: 256px;
+	border-radius: 2px;
+	overflow: hidden;
+	padding-top: 3px;
+}
+#contain-cb #cb {
+	background: url(../img/cb.jpeg)no-repeat center center scroll;
+	background-size: cover;
+	width: 70px;
+	height: 115px;
+	border-radius: 4px;
+	position: absolute;
+	left: 2px; /*590px*/
+	top: 7px; /*263px*/
+	cursor: pointer;
+	transition-duration:1s;
+	box-shadow: 0 0 5px #000;
+}
+#contain-cb #cb:hover {
+	box-shadow: 0 0 5px #fff;
+}
+.anim-cb { /*Pour Javascript*/
+	transform: translateY(-150px);
+	transition-duration: 1s;
+}
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+/* Compartiment Billets */
+#contain-billets {
+	position: absolute;
+	width: 274px;
+	height: 136px;
+	top: 515px;
+	left: 87px;
+	overflow: hidden;
+}
+#contain-billets #billets {
+	width: 236px;
+	height: 132px;
+	position: absolute;
+	left: 50%;
+	top: -136px;
+	transition-duration: 1s;
+	cursor: pointer;
+	transform: translateX(-50%);
+}
+.anim-billets10 { /*Pour Javascript*/
+	background: url(../img/dix.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets20 { /*Pour Javascript*/
+	background: url(../img/vingt.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets30 { /*Pour Javascript*/
+	background: url(../img/trente.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets40 { /*Pour Javascript*/
+	background: url(../img/quarante.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets50 { /*Pour Javascript*/
+	background: url(../img/cinquante.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets60 { /*Pour Javascript*/
+	background: url(../img/soixante.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets70 { /*Pour Javascript*/
+	background: url(../img/soixante-dix.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets80 { /*Pour Javascript*/
+	background: url(../img/quatre-vingt.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets90 { /*Pour Javascript*/
+	background: url(../img/quatre-vingt-dix.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+.anim-billets100 { /*Pour Javascript*/
+	background: url(../img/cent.jpg)no-repeat top center scroll;
+	transform: translate(-50%, 136px) !important;
+	transition-duration: 1s;
+}
+/* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+/* Compartiment Billets */
+#contain-ticket {
+	position: absolute;
+	width: 159px;
+	height: 100px;
+	left: 545px;
+	top: 141px;
+	border-radius: 2px;
+	overflow: hidden;
+	padding: 0 20px;
+}
+#contain-ticket #ticket {
+	width: 119px;
+	height: 95px;
+	background: #fafafa;
+	position: absolute;
+	left: 20px;
+	top: -110px;
+	box-shadow: 2px 2px 5px #000;
+	cursor: pointer;
+	transition-duration: 1s;
+	font-size: 9px;
+	padding: 10px 10px;
+}
+.anim-ticket { /*Pour Javascript*/
+	transform: translateY(110px);
+	transition-duration: 1s;
+}

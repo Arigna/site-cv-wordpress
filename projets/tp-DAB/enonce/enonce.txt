@@ -1,0 +1,27 @@
+Simuler un retrait au distributeur de billets :
+
+
+OK - Déclarer une variable pour un montant maxi de 100€ et mini de 20€
+OK ( Déclarer la variable affecté à l'objet prompt )
+
+OK - Créer une condition pour le retrait maxi et min
+
+OK Si (toutes les conditions sont remplie) {
+		prendre son retrait
+	}
+	sinon {
+		essayer un nouveau retrait
+	}
+
+
+Si (la transaction est confirmé) {
+	proposer de rediriger l'utilisateur
+}
+sinon {
+	recommencer une nouvelle opération
+}
+
+
+
+Afficher en javascript dans votre fichier html le montant
+choisi accompagné d’une chaine de caractère qui dit : " Merci de votre visite "
