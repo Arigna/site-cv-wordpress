@@ -105,6 +105,10 @@ header nav li:hover {
   background: #C1AF99;
   cursor: pointer;
 }
+/* Pour Anim JS */
+.nav-active {
+  background: #C1AF99;
+}
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* Accueil */

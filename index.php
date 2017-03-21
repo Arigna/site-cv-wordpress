@@ -153,9 +153,15 @@
             <div class="container">
                 <h2>Contact</h2>
 
-                <form action="">
-                    [contact-form-7 id="66" title="Formulaire de contact 1"]
-                </form>
+                <?php
+                    $args = array(
+                        'post_type' => 'contact'
+                    );
+                    $contact_query = new WP_Query($args);
+                    if ( $contact_query->have_posts() ) :
+                        while ( $contact_query->have_posts() ) : $contact_query->the_post(); ?>
+                        <?php echo the_content(); ?>
+                <?php endwhile; endif; ?>
 
                 <!--<form action="">
                     <input type="text" name="nom" placeholder="Nom">

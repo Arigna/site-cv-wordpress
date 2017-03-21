@@ -48,6 +48,9 @@ $(function(){ //Fonction d'attente du chargement du DOM
     });
     // Fin fonction pour la navigation
     // ---------------------------------------------------------------------------
+    // Début fonction pour scroll spy :
+    
+    // ---------------------------------------------------------------------------
     // Section Présentation :
 
     // Le menu :
