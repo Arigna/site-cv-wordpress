@@ -12,7 +12,7 @@
         <section id="presentation">
             <div class="container">
                 <ul>
-                    <li><a href="#">A propos</a></li>
+                    <li class="prez-active"><a href="#">A propos</a></li>
                     <li><a href="#">Formations</a></li>
                     <li><a href="#">Expériences</a></li>
                     <li><a href="#">Loisirs</a></li>
@@ -128,17 +128,21 @@
                 </ul>
                 <div class="rea-containt">
                     <?php
-                        if ( have_posts() ) :
-                            while ( have_posts() ) : the_post(); ?>
-                                <div class="rea-cell">
-                                    <img src="<?php echo get_field('image'); ?>" alt="<?php echo get_field('nom_du_projet'); ?>">
-                                    <a href="<?php echo get_field('lien'); ?>" target="_blank">
-                                        <p>
-                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            <span><?php echo get_field('nom_du_projet'); ?></span>
-                                        </p>
-                                    </a>
-                                </div>
+                        $args = array(
+                            'post_type' => 'post'
+                        );
+                        $rea_query = new WP_Query($args);
+                        if ( $rea_query->have_posts() ) :
+                            while ( $rea_query->have_posts() ) : $rea_query->the_post(); ?>
+                            <div class="rea-cell">
+                                <img src="<?php echo get_field('image'); ?>" alt="<?php echo get_field('nom_du_projet'); ?>">
+                                <a href="<?php echo get_field('lien'); ?>" target="_blank">
+                                    <p>
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        <span><?php echo get_field('nom_du_projet'); ?></span>
+                                    </p>
+                                </a>
+                            </div>
                     <?php endwhile; endif; ?>
                 </div>
             </div>
@@ -148,14 +152,19 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact</h2>
+
                 <form action="">
+                    [contact-form-7 id="66" title="Formulaire de contact 1"]
+                </form>
+
+                <!--<form action="">
                     <input type="text" name="nom" placeholder="Nom">
                     <input type="text" name="prenom" placeholder="Prénom">
                     <input type="email" name="email" placeholder="Email">
                     <input type="text" name="objet" placeholder="Objet">
                     <textarea name="msg" placeholder="Message"></textarea>
                     <input type="submit" value="Envoyer">
-                </form>
+                </form>-->
             </div>
         </section>
         <!--Fin Contact-->

@@ -60,24 +60,32 @@ $(function(){ //Fonction d'attente du chargement du DOM
         $('#description').slideDown();
         $('#formations, #exp, #loisirs').slideUp();
         $('#presentation h2').text('Présentation');
+        $('#presentation .container>ul>li').removeClass('prez-active');
+        $(this).addClass('prez-active');
     });
     // Formations :
     $('#presentation .container>ul>li').eq(1).on('click', function(){
         $('#formations').slideDown();
         $('#description, #exp, #loisirs').slideUp();
         $('#presentation h2').text('Formations');
+        $('#presentation .container>ul>li').removeClass('prez-active');
+        $(this).addClass('prez-active');
     });
     // Expériences :
     $('#presentation .container>ul>li').eq(2).on('click', function(){
         $('#exp').slideDown();
         $('#formations, #description, #loisirs').slideUp();
         $('#presentation h2').text('Expériences');
+        $('#presentation .container>ul>li').removeClass('prez-active');
+        $(this).addClass('prez-active');
     });
     // Loisirs :
     $('#presentation .container>ul>li').eq(3).on('click', function(){
         $('#loisirs').slideDown();
         $('#formations, #exp, #description').slideUp();
         $('#presentation h2').text('Loisirs');
+        $('#presentation .container>ul>li').removeClass('prez-active');
+        $(this).addClass('prez-active');
     });
     // ---------------------------------------------------------------------------
     // Section Compétences :
@@ -90,18 +98,24 @@ $(function(){ //Fonction d'attente du chargement du DOM
         $('#competences .container>div').eq(0).slideToggle();
         $('#competences .container>div').eq(1).slideUp();
         $('#competences .container>div').eq(2).slideUp();
+        $('#competences .container>ul>li').removeClass('comp-active');
+        $(this).addClass('comp-active');
     });
     // Compétence #2 (Informatique) :
     $('#competences .container>ul>li').eq(1).on('click', function(){
         $('#competences .container>div').eq(1).slideToggle();
         $('#competences .container>div').eq(0).slideUp();
         $('#competences .container>div').eq(2).slideUp();
+        $('#competences .container>ul>li').removeClass('comp-active');
+        $(this).addClass('comp-active');
     });
     // Compétence #3 (Commerce) :
     $('#competences .container>ul>li').eq(2).on('click', function(){
         $('#competences .container>div').eq(2).slideToggle();
         $('#competences .container>div').eq(1).slideUp();
         $('#competences .container>div').eq(0).slideUp();
+        $('#competences .container>ul>li').removeClass('comp-active');
+        $(this).addClass('comp-active');
     });
 
 }); //Fin fonction d'attente du chargement du DOM

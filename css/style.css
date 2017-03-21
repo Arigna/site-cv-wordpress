@@ -201,6 +201,10 @@ header nav li:hover {
 #presentation #formations, #presentation #exp, #presentation #loisirs {
   display: none;
 }
+.prez-active {
+  color: #060F2E  !important;
+  border-bottom: solid 1px #060F2E !important;
+}
 /**//**//**//**//**//**//**//**//**//**//**//**//**/
 #presentation #formations h3, #presentation #exp h3, #presentation #loisirs h3 {
   display: inline-block;
@@ -235,15 +239,19 @@ header nav li:hover {
 #competences .container > ul {
   display: table;
   width: 100%;
-  margin: 60px 0 40px;
+  margin: 60px 0 0;
   text-align: center;
 }
 #competences .container > ul > li {
-  padding: 0 50px;
+  padding: 30px 50px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
-#competences .container > ul > li:hover h3 {
-  background: #C1AF99;
+#competences .container > ul > li:hover {
+  background: rgba(250, 250, 250, 0.5);
+}
+.comp-active {
+  background: rgba(250, 250, 250, 0.5);
 }
 #competences .container > ul > li:first-of-type {
   display: table-cell;
@@ -263,7 +271,6 @@ header nav li:hover {
 #competences h3 {
   margin: 20px 0;
   line-height: 35px;
-  transition-duration: 0.3s;
 }
 #competences .container div {
   background: rgba(250, 250, 250, 0.5);

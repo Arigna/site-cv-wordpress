@@ -47,7 +47,7 @@
             </li>
         </ul>
     </div>
-    <p>&copy; 2017 - Design &amp; Dev : <a href="mailto:arigna.p@gmail.com" title="arigna.p@gmail.com">Arigna Phengphong</a></p>
+    <p>&copy; 2017 - Design &amp; Dev : Arigna Phengphong</p>
 </footer>
         <!--Fin Footer-->
 
