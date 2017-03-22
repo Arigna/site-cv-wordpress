@@ -48,7 +48,11 @@ $(function(){ //Fonction d'attente du chargement du DOM
     });
     // Fin fonction pour la navigation
     // ---------------------------------------------------------------------------
-    // Début fonction pour scroll spy :
+    // Début Anim pour Burger Menu lors du responsive :
+    $('header i').on('click', function(){
+        $(this).toggleClass('burger-active');
+        $('header nav').slideToggle();
+    });
     
     // ---------------------------------------------------------------------------
     // Section Présentation :

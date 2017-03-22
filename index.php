@@ -152,7 +152,6 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact</h2>
-
                 <?php
                     $args = array(
                         'post_type' => 'contact'
@@ -162,15 +161,6 @@
                         while ( $contact_query->have_posts() ) : $contact_query->the_post(); ?>
                         <?php echo the_content(); ?>
                 <?php endwhile; endif; ?>
-
-                <!--<form action="">
-                    <input type="text" name="nom" placeholder="Nom">
-                    <input type="text" name="prenom" placeholder="Prénom">
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="text" name="objet" placeholder="Objet">
-                    <textarea name="msg" placeholder="Message"></textarea>
-                    <input type="submit" value="Envoyer">
-                </form>-->
             </div>
         </section>
         <!--Fin Contact-->
