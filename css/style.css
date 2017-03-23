@@ -549,6 +549,10 @@ footer p:last-of-type a:hover {
     padding: 0 0 0 20px;
     background: #060F2E;
   }
+  #presentation .prez-active {
+    border-bottom: solid 1px #fafafa !important;
+    color: #C1AF99 !important;
+  }
   #presentation .container>ul li a::before {
     content: '+';
     margin-right: 5px;
@@ -565,9 +569,42 @@ footer p:last-of-type a:hover {
   #competences .container>ul {
     display: block;
     margin-top: 40px;
+    text-align: center;
   }
   #competences .container>ul>li {
+    display: inline-block !important;
+    width: 100% !important;
+    padding: 30px 20px;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  #realisations .container .cat-item {
+    float: none;
+  }
+  #realisations .container .rea-containt {
+    margin: 0;
+  }
+  #realisations .container .rea-cell {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  #contact .container {
+    padding: 0 20px;
+  }
+  #contact div>form {
+    width: 100%;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  footer .container>ul {
     display: block;
+  }
+  footer .container>ul>li {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  footer p:last-of-type {
+    line-height: 40px;
   }
   /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 }

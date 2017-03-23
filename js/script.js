@@ -51,8 +51,19 @@ $(function(){ //Fonction d'attente du chargement du DOM
     // Début Anim pour Burger Menu lors du responsive :
     $('header i').on('click', function(){
         $(this).toggleClass('burger-active');
-        $('header nav').slideToggle();
-    });
+        $('header').addClass('header-scroll');
+        $('header nav').slideToggle(400);
+
+        // Refermer la nav via la commande stopPropagation :
+        $('.container').on('click', function(event){
+            event.stopPropagation();
+        });
+        $('header nav, html').on('click', function(){
+            $('header i').removeClass('burger-active');
+            $('header nav').slideUp(400);
+        });
+
+    }); // Fin Anim pour Burger Menu lors du responsive
     
     // ---------------------------------------------------------------------------
     // Section Présentation :
