@@ -494,7 +494,11 @@ footer p:last-of-type a:hover {
 
 /* Responsive */
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
+/* Format SMARTPHONE */
+@media screen and (max-width: 639px) {
+  section {
+    padding: 48px 0;
+  }
   .container {
     width: 90%;
   }
@@ -548,10 +552,6 @@ footer p:last-of-type a:hover {
     float: none;
     padding: 0 0 0 20px;
     background: #060F2E;
-  }
-  #presentation .prez-active {
-    border-bottom: solid 1px #fafafa !important;
-    color: #C1AF99 !important;
   }
   #presentation .container>ul li a::before {
     content: '+';
@@ -607,4 +607,128 @@ footer p:last-of-type a:hover {
     line-height: 40px;
   }
   /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+}
+
+/* Format TABLETTE */
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  section {
+    padding: 67px 0;
+  }
+  .container {
+    width: 90%;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  header h1 {
+    font-size: 23px;
+  }
+  header h1 span:last-of-type {
+    font-size: 11px;
+    letter-spacing: 5px;
+  }
+  header .container>i {
+    display: block;
+    float: right;
+    border: solid 1px #fafafa;
+    padding: 5px 8px;
+    font-size: 27px;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+  .burger-active { /* Pour Anim JS */
+    background: #C1AF99;
+  }
+  header nav {
+    float: none;
+    display: none;
+    clear: both;
+    margin-top: 50px;
+  }
+  header nav li {
+    display: block;
+    padding: 0;
+    border-top: solid 1px #C1AF99;
+    font-size: 16px;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  #accueil cite {
+    font-size: 20px;
+  }
+  #accueil cite span {
+    font-size: 30px;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  #presentation {
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #presentation .container>ul {
+    float: none;
+  }
+  #presentation .container>ul li {
+    float: none;
+    padding: 0 0 0 20px;
+    background: #060F2E;
+  }
+  #presentation .container>ul li a::before {
+    content: '+';
+    margin-right: 5px;
+  }
+  #presentation a#dl-cv {
+    float: none;
+    border-radius: 0;
+    padding: 0 0 0 20px;
+  }
+  #presentation h2 {
+    margin-top: 40px;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  #competences .container>ul {
+    margin-top: 45px;
+  }
+  #competences .container>ul>li {
+    padding: 0;
+  }
+  #competences i {
+    font-size: 55px;
+  }
+  #competences h3 {
+    margin: 12px 0;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  #realisations .container .cat-item {
+    float: none;
+  }
+  #realisations .container .rea-containt {
+    margin: 0;
+  }
+  #realisations .container .rea-cell {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  #contact .container {
+    padding: 0 20px;
+  }
+  #contact div>form {
+    width: 100%;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+  footer .container>ul {
+    display: block;
+  }
+  footer .container>ul>li {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  footer p:last-of-type {
+    line-height: 40px;
+  }
+  /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1169px) {
+  .container {
+    width: 90%;
+  }
 }

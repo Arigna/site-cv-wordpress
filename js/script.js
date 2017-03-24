@@ -135,5 +135,26 @@ $(function(){ //Fonction d'attente du chargement du DOM
         $('#competences .container>ul>li').removeClass('comp-active');
         $(this).addClass('comp-active');
     });
+    // ---------------------------------------------------------------------------
+    // Fonctions pour le responsive :
+
+    // Condition pour capter si le navigateur est en responsive ou non :
+    if ( $('header i').css('display') === 'block' ) {
+        // alert('Tu es en responsive');
+        //--------------------------------------------------------------
+        // Présentation :
+        // Retirer la class .prez-active sur le 1er lien :
+        $('#presentation .container>ul>li').removeClass('prez-active');
+        // Fonction pour le menu navigation :
+        $('#presentation .container>ul>li').on('click', function(){
+            $('html,body').animate({scrollTop: $("#presentation #dl-cv").offset().top}, 'slow');
+            $(this).removeClass('prez-active');
+        });
+        //--------------------------------------------------------------
+        // Compétences :
+        $('#competences .container>ul>li').on('click', function(){
+            $('html,body').animate({scrollTop: $("#competences .container div").offset().top}, 'slow');
+        });
+    };
 
 }); //Fin fonction d'attente du chargement du DOM

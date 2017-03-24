@@ -112,6 +112,7 @@
                     if ( $competences_query->have_posts() ) :
                         while ( $competences_query->have_posts() ) : $competences_query->the_post(); ?>
                     <div>
+                        <h4><?php echo get_field('domaine'); ?></h4>
                         <?php echo get_field('details'); ?>
                     </div>
                     <?php endwhile; endif; ?>
