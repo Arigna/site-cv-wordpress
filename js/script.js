@@ -18,7 +18,7 @@ $(function(){ //Fonction d'attente du chargement du DOM
 
     // Reload page lors du clic sur le logo (h1)
     $('h1').on('click', function(){
-        location.reload();
+        window.location="http://arigna.esy.es";
     });
     // ---------------------------------------------------------------------------
     // Début fonction pour la navigation :
@@ -78,32 +78,40 @@ $(function(){ //Fonction d'attente du chargement du DOM
         $('#description').slideDown();
         $('#formations, #exp, #loisirs').slideUp();
         $('#presentation h2').text('Présentation');
-        $('#presentation .container>ul>li').removeClass('prez-active');
-        $(this).addClass('prez-active');
+        if ( $('header i').css('display') === 'none' ) {
+            $('#presentation .container>ul>li').removeClass('prez-active');
+            $(this).addClass('prez-active');
+        };
     });
     // Formations :
     $('#presentation .container>ul>li').eq(1).on('click', function(){
         $('#formations').slideDown();
         $('#description, #exp, #loisirs').slideUp();
         $('#presentation h2').text('Formations');
-        $('#presentation .container>ul>li').removeClass('prez-active');
-        $(this).addClass('prez-active');
+        if ( $('header i').css('display') === 'none' ) {
+            $('#presentation .container>ul>li').removeClass('prez-active');
+            $(this).addClass('prez-active');
+        };
     });
     // Expériences :
     $('#presentation .container>ul>li').eq(2).on('click', function(){
         $('#exp').slideDown();
         $('#formations, #description, #loisirs').slideUp();
         $('#presentation h2').text('Expériences');
-        $('#presentation .container>ul>li').removeClass('prez-active');
-        $(this).addClass('prez-active');
+        if ( $('header i').css('display') === 'none' ) {
+            $('#presentation .container>ul>li').removeClass('prez-active');
+            $(this).addClass('prez-active');
+        };
     });
     // Loisirs :
     $('#presentation .container>ul>li').eq(3).on('click', function(){
         $('#loisirs').slideDown();
         $('#formations, #exp, #description').slideUp();
         $('#presentation h2').text('Loisirs');
-        $('#presentation .container>ul>li').removeClass('prez-active');
-        $(this).addClass('prez-active');
+        if ( $('header i').css('display') === 'none' ) {
+            $('#presentation .container>ul>li').removeClass('prez-active');
+            $(this).addClass('prez-active');
+        };
     });
     // ---------------------------------------------------------------------------
     // Section Compétences :
