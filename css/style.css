@@ -113,15 +113,6 @@ header nav li:hover {
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* Accueil */
 
-#accueil {
-  background: -webkit-linear-gradient(to bottom, rgba(6, 15, 46, 0.6) 0%, rgba(6, 15, 46, 0.6) 100%), url(../img/bg_road.jpg) no-repeat center center;
-  background: linear-gradient(to bottom, rgba(6, 15, 46, 0.6) 0%, rgba(6, 15, 46, 0.6) 100%), url(../img/bg_road.jpg) no-repeat center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  position: relative;
-}
 #accueil .container {
   position: absolute;
   top: 50%;
@@ -160,9 +151,20 @@ header nav li:hover {
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* Présentation */
 
-#presentation {
+/*#presentation {
   background: url(../img/bg_experiences.PNG)no-repeat center right;
+}*/
+/* Pour Anim bg JS */
+.bg-exp {
+  background: url(../img/bg_experiences.PNG)no-repeat center right;
+  background-size: contain;
 }
+.bg-formations {
+  background: -webkit-linear-gradient(to bottom, rgba(250, 250, 250, 0.5) 0%, rgba(250, 250, 250, 0.5) 100%), url(../img/mockup.jpg)no-repeat center right;
+  background: linear-gradient(to bottom, rgba(250, 250, 250, 0.5) 0%, rgba(250, 250, 250, 0.5) 100%), url(../img/mockup.jpg)no-repeat center right;
+  background-size: contain;
+}
+/**//**//**//**//**/
 #presentation .container>ul {
   float: left;
 }
@@ -232,14 +234,6 @@ header nav li:hover {
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* Compétences */
 
-#competences {
-  background: -webkit-linear-gradient(to bottom, rgba(6, 15, 46, 0.9) 0%, rgba(6, 15, 46, 0.9) 100%), url(../img/bg_competences.jpg) no-repeat center center;
-  background: linear-gradient(to bottom, rgba(6, 15, 46, 0.9) 0%, rgba(6, 15, 46, 0.9) 100%), url(../img/bg_competences.jpg) no-repeat center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: #fafafa;
-}
 #competences .container > ul {
   display: table;
   width: 100%;
@@ -366,13 +360,8 @@ header nav li:hover {
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* Contact */
 
-#contact {
-  background: -webkit-linear-gradient(top, rgba(193, 175, 153, 0.5) 0%, rgba(193, 175, 153, 0.5) 100%), url(../img/bg_contact.jpg) no-repeat center center;
-  background: linear-gradient(to bottom, rgba(193, 175, 153, 0.5) 0%, rgba(193, 175, 153, 0.5) 100%), url(../img/bg_contact.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
 #contact .container {
+  background: rgba(250, 250, 250, 0.5);
   padding: 40px;
 }
 #contact div>form {
@@ -394,6 +383,9 @@ header nav li:hover {
 }
 #contact form input:not([type="submit"]), #contact form textarea {
   border-bottom: solid 1px #060F2E;
+}
+#contact form textarea {
+    height: 200px;
 }
 #contact form input[type="submit"] {
   background: #060F2E;

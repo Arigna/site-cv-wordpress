@@ -75,6 +75,7 @@ $(function(){ //Fonction d'attente du chargement du DOM
     });
     // A Propos :
     $('#presentation .container>ul>li').eq(0).on('click', function(){
+        $('#presentation').removeClass();
         $('#description').slideDown();
         $('#formations, #exp, #loisirs').slideUp();
         $('#presentation h2').text('Présentation');
@@ -85,6 +86,8 @@ $(function(){ //Fonction d'attente du chargement du DOM
     });
     // Formations :
     $('#presentation .container>ul>li').eq(1).on('click', function(){
+        $('#presentation').removeClass();
+        $('#presentation').addClass('bg-formations');
         $('#formations').slideDown();
         $('#description, #exp, #loisirs').slideUp();
         $('#presentation h2').text('Formations');
@@ -95,6 +98,8 @@ $(function(){ //Fonction d'attente du chargement du DOM
     });
     // Expériences :
     $('#presentation .container>ul>li').eq(2).on('click', function(){
+        $('#presentation').removeClass();
+        $('#presentation').addClass('bg-exp');
         $('#exp').slideDown();
         $('#formations, #description, #loisirs').slideUp();
         $('#presentation h2').text('Expériences');
@@ -105,6 +110,7 @@ $(function(){ //Fonction d'attente du chargement du DOM
     });
     // Loisirs :
     $('#presentation .container>ul>li').eq(3).on('click', function(){
+        $('#presentation').removeClass();
         $('#loisirs').slideDown();
         $('#formations, #exp, #description').slideUp();
         $('#presentation h2').text('Loisirs');
