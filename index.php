@@ -134,8 +134,19 @@
                         );
                         $rea_query = new WP_Query($args);
                         if ( $rea_query->have_posts() ) :
-                            while ( $rea_query->have_posts() ) : $rea_query->the_post(); ?>
-                            <div class="rea-cell">
+                            while ( $rea_query->have_posts() ) : $rea_query->the_post();
+                                // 1) récup les cat du post ds une var :
+                                $categories = get_the_category();
+                                // 2) Init une var category slug :
+                                $category_slug = "";
+                                // 3) Ajout du foreach pr recup les categories :
+                                foreach ( $categories as $category ) {
+                                    // 4) concaténer le nom de la categorie dans la var categorie slug :
+                                    $category_slug .= " " . $category->slug;
+                                }
+                                // 5) ajouter la var dans l'attribut class :
+                                ?>
+                            <div class="rea-cell<?php echo $category_slug; ?>">
                                 <img src="<?php echo get_field('image'); ?>" alt="<?php echo get_field('nom_du_projet'); ?>">
                                 <a href="<?php echo get_field('lien'); ?>" target="_blank">
                                     <p>

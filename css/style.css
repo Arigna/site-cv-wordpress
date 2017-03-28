@@ -160,8 +160,7 @@ header nav li:hover {
   background-size: contain;
 }
 .bg-formations {
-  background: -webkit-linear-gradient(to bottom, rgba(250, 250, 250, 0.5) 0%, rgba(250, 250, 250, 0.5) 100%), url(../img/mockup.jpg)no-repeat center right;
-  background: linear-gradient(to bottom, rgba(250, 250, 250, 0.5) 0%, rgba(250, 250, 250, 0.5) 100%), url(../img/mockup.jpg)no-repeat center right;
+  background: url(../img/mockup2.jpg)no-repeat center left;
   background-size: contain;
 }
 /**//**//**//**//**/
@@ -229,6 +228,9 @@ header nav li:hover {
 #presentation #formations ul, #presentation #exp ul {
   list-style-type: square;
   margin-left: 30px;
+}
+#presentation div#formations {
+  text-align: center;
 }
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
@@ -437,6 +439,7 @@ footer > .container > ul > li {
 /**//**//**//**//**/
 /* Gauche */
 footer .container > ul > li:first-of-type > ul {
+  display: inline-block;
   margin: 20px 0;
   text-align: left;
 }

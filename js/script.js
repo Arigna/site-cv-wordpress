@@ -150,6 +150,34 @@ $(function(){ //Fonction d'attente du chargement du DOM
         $(this).addClass('comp-active');
     });
     // ---------------------------------------------------------------------------
+    // Section Réalisations :
+
+    // Le menu :
+    // Annuler le comportement naturel des liens :
+    $('#realisations .cat-item>a').on('click', function(evt){
+        evt.preventDefault();
+    });
+    // Catégorie Etudiant :
+    $('#realisations li.cat-item-3').on('click', function(){
+        $('#realisations div.rea-cell').fadeOut();
+        $('#realisations div.etudiant').fadeIn();
+    });
+    // Catégorie Informatique :
+    $('#realisations li.cat-item-5').on('click', function(){
+        $('#realisations div.rea-cell').fadeOut();
+        $('#realisations div.informatique').fadeIn();
+    });
+    // Catégorie Non-classé :
+    $('#realisations li.cat-item-1').on('click', function(){
+        $('#realisations div.rea-cell').fadeOut();
+        $('#realisations div.non-classe').fadeIn();
+    });
+    // Catégorie Perso :
+    $('#realisations li.cat-item-4').on('click', function(){
+        $('#realisations div.rea-cell').fadeOut();
+        $('#realisations div.perso').fadeIn();
+    });
+    // ---------------------------------------------------------------------------
     // Fonctions pour le responsive :
 
     // Condition pour capter si le navigateur est en responsive ou non :
