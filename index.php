@@ -149,10 +149,13 @@
                             <div class="rea-cell<?php echo $category_slug; ?>">
                                 <img src="<?php echo get_field('image'); ?>" alt="<?php echo get_field('nom_du_projet'); ?>">
                                 <a href="<?php echo get_field('lien'); ?>" target="_blank">
-                                    <p>
+                                    <div>
                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                        <span><?php echo get_field('nom_du_projet'); ?></span>
-                                    </p>
+                                        <span>
+                                            <h3><?php echo get_field('nom_du_projet'); ?></h3>
+                                            <?php echo the_content(); ?>
+                                        </span>
+                                    </div>
                                 </a>
                             </div>
                     <?php endwhile; endif; ?>

@@ -161,21 +161,29 @@ $(function(){ //Fonction d'attente du chargement du DOM
     $('#realisations li.cat-item-3').on('click', function(){
         $('#realisations div.rea-cell').fadeOut();
         $('#realisations div.etudiant').fadeIn();
+        $('#realisations li.cat-item').removeClass('rea-active');
+        $(this).addClass('rea-active');
     });
     // Catégorie Informatique :
     $('#realisations li.cat-item-5').on('click', function(){
         $('#realisations div.rea-cell').fadeOut();
         $('#realisations div.informatique').fadeIn();
+        $('#realisations li.cat-item').removeClass('rea-active');
+        $(this).addClass('rea-active');
     });
     // Catégorie Non-classé :
     $('#realisations li.cat-item-1').on('click', function(){
         $('#realisations div.rea-cell').fadeOut();
         $('#realisations div.non-classe').fadeIn();
+        $('#realisations li.cat-item').removeClass('rea-active');
+        $(this).addClass('rea-active');
     });
     // Catégorie Perso :
     $('#realisations li.cat-item-4').on('click', function(){
         $('#realisations div.rea-cell').fadeOut();
         $('#realisations div.perso').fadeIn();
+        $('#realisations li.cat-item').removeClass('rea-active');
+        $(this).addClass('rea-active');
     });
     // ---------------------------------------------------------------------------
     // Fonctions pour le responsive :
