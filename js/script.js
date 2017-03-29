@@ -111,6 +111,7 @@ $(function(){ //Fonction d'attente du chargement du DOM
     // Loisirs :
     $('#presentation .container>ul>li').eq(3).on('click', function(){
         $('#presentation').removeClass();
+        $('#presentation').addClass('bg-loisirs');
         $('#loisirs').slideDown();
         $('#formations, #exp, #description').slideUp();
         $('#presentation h2').text('Loisirs');

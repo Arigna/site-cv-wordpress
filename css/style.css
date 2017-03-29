@@ -155,12 +155,16 @@ header nav li:hover {
   background: url(../img/bg_experiences.PNG)no-repeat center right;
 }*/
 /* Pour Anim bg JS */
+.bg-formations {
+  background: url(../img/mockup2.jpg)no-repeat center left;
+  background-size: contain;
+}
 .bg-exp {
   background: url(../img/bg_experiences.PNG)no-repeat center right;
   background-size: contain;
 }
-.bg-formations {
-  background: url(../img/mockup2.jpg)no-repeat center left;
+.bg-loisirs {
+  background: url(../img/bg_loisirs.jpg)no-repeat center right;
   background-size: contain;
 }
 /**//**//**//**//**/
@@ -229,7 +233,7 @@ header nav li:hover {
   list-style-type: square;
   margin-left: 30px;
 }
-#presentation div#formations {
+#presentation div#formations, #presentation div#loisirs {
   text-align: center;
 }
 
