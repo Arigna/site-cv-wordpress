@@ -76,6 +76,7 @@ $(function(){ //Fonction d'attente du chargement du DOM
     // A Propos :
     $('#presentation .container>ul>li').eq(0).on('click', function(){
         $('#presentation').removeClass();
+        $('#presentation').addClass('bg-prez');
         $('#description').slideDown();
         $('#formations, #exp, #loisirs').slideUp();
         $('#presentation h2').text('Présentation');

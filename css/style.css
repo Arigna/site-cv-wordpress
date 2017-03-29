@@ -151,20 +151,25 @@ header nav li:hover {
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /* Présentation */
 
-/*#presentation {
-  background: url(../img/bg_experiences.PNG)no-repeat center right;
-}*/
+.bg-prez {
+  background: url(../img/bg_prez.jpg)no-repeat center right;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
 /* Pour Anim bg JS */
 .bg-formations {
   background: url(../img/mockup2.jpg)no-repeat center left;
+  -webkit-background-size: contain;
   background-size: contain;
 }
 .bg-exp {
   background: url(../img/bg_experiences.PNG)no-repeat center right;
+  -webkit-background-size: contain;
   background-size: contain;
 }
 .bg-loisirs {
   background: url(../img/bg_loisirs.jpg)no-repeat center right;
+  -webkit-background-size: contain;
   background-size: contain;
 }
 /**//**//**//**//**/

@@ -9,7 +9,7 @@
         </section>
         <!--Fin Accueil-->
         <!--Début Présentation-->
-        <section id="presentation">
+        <section id="presentation" class="bg-prez">
             <div class="container">
                 <ul>
                     <li class="prez-active"><a href="#">A propos</a></li>
