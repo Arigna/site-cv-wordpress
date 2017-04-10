@@ -39,7 +39,7 @@
                     $rsociaux_query = new WP_Query($args);
                     if ( $rsociaux_query->have_posts() ) :
                         while ( $rsociaux_query->have_posts() ) : $rsociaux_query->the_post(); ?>
-                        <a href="<?php echo get_field('lien'); ?>">
+                        <a href="<?php echo get_field('lien'); ?>" target="_blank">
                             <?php echo get_field('icon'); ?>
                         </a>
                 <?php endwhile; endif; ?>
