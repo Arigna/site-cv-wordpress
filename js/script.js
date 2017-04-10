@@ -103,7 +103,7 @@ $(function(){ //Fonction d'attente du chargement du DOM
         $('#presentation').addClass('bg-exp');
         $('#exp').slideDown();
         $('#formations, #description, #loisirs').slideUp();
-        $('#presentation h2').text('Expériences');
+        $('#presentation h2').text('Expérience');
         if ( $('header i').css('display') === 'none' ) {
             $('#presentation .container>ul>li').removeClass('prez-active');
             $(this).addClass('prez-active');

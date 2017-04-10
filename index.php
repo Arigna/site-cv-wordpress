@@ -14,7 +14,7 @@
                 <ul>
                     <li class="prez-active"><a href="#">A propos</a></li>
                     <li><a href="#">Formations</a></li>
-                    <li><a href="#">Expériences</a></li>
+                    <li><a href="#">Expérience</a></li>
                     <li><a href="#">Loisirs</a></li>
                 </ul>
                 <a href="<?php echo get_field('fichier_cv'); ?>" id="dl-cv" title="Télécharger mon CV" download>Télécharger mon CV</a>
